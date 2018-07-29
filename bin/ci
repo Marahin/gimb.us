@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+bundle exec rspec spec --format documentation
+bin/quality
