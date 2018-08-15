@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.0'
 
 # Core
+gem 'actionpack-action_caching', '~> 1.2.0'
+gem 'actionpack-page_caching', '~> 1.1.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'figaro', '~> 1.1'
 gem 'pg', '~> 1.0'
@@ -17,6 +19,9 @@ gem 'uglifier', '>= 1.3.0'
 
 # API
 gem 'fast_jsonapi', '~> 1.2'
+
+# Geolocation
+gem 'geocoder', '~> 1.5.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
